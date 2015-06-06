@@ -1,0 +1,28 @@
+<html>
+<head>
+<body>
+<script type="text/javascript">
+
+//set variables
+var grade = prompt("Enter your grade in integer form.", "Between 0 to 100")
+
+//if's
+if (grade <= 49) { 
+	document.write("Grade:" + grade + " Poor")
+}
+else if (grade <= 64) {
+	document.write("Grade:" + grade + " Below Average");
+}
+else if (grade <= 79) {
+	document.write("Grade:" + grade + " Average");
+}
+else if (grade <= 89) {
+	document.write("Grade:" + grade + " Above Average")
+}
+else if (grade <= 100) {
+	document.write("Grade:" + grade + " Exceptional")
+}
+else {
+	document.write("Error, the value entered is not within the range of 0 - 100.")
+};
+</script> </body> </head> </html>

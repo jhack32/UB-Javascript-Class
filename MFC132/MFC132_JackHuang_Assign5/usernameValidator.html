@@ -1,0 +1,45 @@
+<html>
+<head>
+<h1> Username Validator</h1>
+<script type="text/javascript">
+
+
+//Prompts user for a username
+var username = prompt("Enter a username beginning with a letter and has at least one digit (8 characters minimum)");
+username = username.toUpperCase(username);
+var usernameLen = username.length;
+var username1 = true;
+var username2;
+var digitcount = 0;
+
+//Validation loop
+if ((usernameLen <= 8) || (!username1) || (digitcount == 0)) {
+	var username = prompt("Enter a username beginning with a letter and has at least one digit (8 characters minimum)");
+};
+
+//check first letter of userName
+
+username1 = username.substring(0, 1);
+if (username1 >= "A" && username1 <= "Z") {
+	username1 = true;
+}
+else {
+	username1 = false;
+}
+//check to see if theres a number in the username
+    for (i = 1; i < usernameLen; i++)
+
+{
+     username2 = username.substring(i, 1)
+   if (username2 >=0 && username2 <= 9)
+   {
+    digitcount = digitcount + 1;
+   }
+
+};
+
+</script></head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<body>
+<form name="BuzzButtons" action="">
+<input type="text" name="buttonType" value="Enter name for button" size="50" /> <br />
+<input type="text" name="email" value="Enter your e-mail" size="50" /><br />
+<input type="text" name="numOfButtons" value="Enter the amount of buttons" size="50" /> <br />
+<input type="button" name="orderInfoButton" value="Order Information" onclick="displayOrder()" /><br />
+<textarea name="orderInfo" readonly="true" value="" rows="6" cols="50"></textarea><br />
+</form>
+<script type="text/javascript">
+var BR = "<br />";
+var NL = "\n";
+function displayOrder() {
+var buttonType = document.BuzzButtons.buttonType.value;
+var email = document.BuzzButtons.email.value;
+var numOfButtons = document.BuzzButtons.numOfButtons.value;
+var buttonPriceTot = 0.99 * document.BuzzButtons.numOfButtons.value;
+var salesTax = 0.06 * buttonPriceTot;
+var shipping = 2.00;
+var buttonPriceTotal = buttonPriceTot + salesTax + shipping;
+document.BuzzButtons.orderInfo.value = "Here is the order info:" + NL + NL
++ "Name of button: " + buttonType +  NL 
++ "E-mail: " + email + NL
++ "Number of buttons: " + numOfButtons + NL 
++ "Button Price Sales Tax: $" + salesTax + NL
++ "Shipping: $" + shipping + NL
++ "Total: $" + buttonPriceTotal
+}
+
+</script> </head>
+</body> </html>

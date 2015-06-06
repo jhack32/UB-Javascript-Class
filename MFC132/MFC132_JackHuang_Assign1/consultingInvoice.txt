@@ -1,0 +1,39 @@
+Start
+Display "Watt Gives Consulting Services"
+
+//Declaring Variables
+	Declare String lastName
+	Declare String firstName
+	Declare Numeric dayOne //Hours for Day One
+	Declare Numeric dayTwo //Hours for Day Two
+	Declare Numeric dayThree //Hours for Day Three
+	Declare Numeric dayFour // Hours for Day Four
+	Declare Numeric dayFive // Hours for Day Five
+	Declare Numeric totalHours // The total hours for five days
+	Declare Numeric amtBilled //The total amount to be billed
+	Declare Constant standardRate = 30.00 // Standard rate is at $30.00
+//Get Input 
+	Display "Enter Client's Last Name: "
+	Input lastName
+	Display "Enter Client's First Name: "
+	Input firstName
+	Display "Enter the hours worked on Day One: "
+	Input dayOne
+	Display "Enter the hours worked on Day Two: "
+	Input dayTwo
+	Display "Enter the hours worked on Day Three: "
+	Input dayThree
+	Display "Enter the hours worked on Day Four: "
+	Input dayFour
+	Display "Enter the hours worked on Day Five: "
+	Input dayFive
+//Total Hours worked
+totalHours = dayOne + dayTwo + dayThree + dayFour + dayFive
+//Total Hours worked + standard Rate
+amtBilled = standardRate * totalHours
+//Displaying the Information
+	Display "Watt Gives Consulting Services
+	Display "Invoice Statement for " + firstName + lastName " // Provides the first and last name of client as well as what the statement is
+	Display "Total hours worked: " + totalHours // Provides the number of hours worked on the project
+	Display "The rate is: $" + standardRate // Provides the standard rate that is charged
+	Display "The total amount: $" + amtBilled // The total amount, which is the total hours multiplied by the standard rate.

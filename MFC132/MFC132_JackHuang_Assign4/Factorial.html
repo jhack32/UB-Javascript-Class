@@ -1,0 +1,24 @@
+<html>
+<head>
+<h1>Factorial Program</h1>
+<script type="text/javascript">
+
+//variables
+var integer = prompt("Enter a number between 1-20")
+integer = parseInt(integer);
+var result = integer
+
+// if over 20
+if (integer >= 20) {
+	alert("The number is greater than 20!");
+};
+//for variable
+for (i = integer - 1; i > 1; i--) {
+	result = result * i;
+};
+document.write("The factorial for <b>" + integer + "</b> is: <b>" + result + "</b>");
+</script>
+</head>
+<body>
+</body>
+</html>

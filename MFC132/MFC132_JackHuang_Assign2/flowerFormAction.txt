@@ -1,0 +1,23 @@
+<html>
+<head>
+<body>
+<form name="shop" action="">
+<input type="text" name="fullName" value="Enter your Full Name" /><br />
+<input type="radio" name="flowers" value="Roses" onclick="setType(this.value)" />Roses <br />
+<input type="radio" name="flowers" value="Carnations" onclick="setType(this.value)" />Carnations <br />
+<input type="radio" name="flowers" value="Daises" onclick="setType(this.value)" />Daises <br />
+<input type="button" name="requestInfo" value="Request Info" size="40" onclick="displayMessage()" /> <br />
+<input type="text" name="thanks" value="Thank you for requesting information" readonly=true size="50" />
+
+<script type="text/javascript">
+function setType(flowerType) {
+flowersType = flowerType;
+}
+function displayFlower() {
+var flowers = document.shop.flowers.value;
+}
+function displayMessage() {
+var fullName = document.shop.fullName.value;
+document.shop.thanks.value = fullName + ", Thank you for your inquiry about " + flowersType;
+}
+</script> </head> </body> </html>

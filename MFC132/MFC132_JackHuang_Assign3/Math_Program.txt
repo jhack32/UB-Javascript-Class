@@ -1,0 +1,11 @@
+<html>
+<head>
+<body>
+<script type="text/javascript">
+
+//variables
+var num1 = prompt("Enter a number")
+var num2 = prompt("Enter a second number")
+var method = prompt("Enter either 1,2,3 or 4,", "1=Add, 2=Subtract, 3=Multiply, 4=Divide")
+
+</script> </body> </head> </html>

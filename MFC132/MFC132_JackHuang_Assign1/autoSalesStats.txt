@@ -1,0 +1,31 @@
+Start
+Display "Bennet's Used Auto Sales"
+
+//Declaring Variables
+Declare Numeric quarterOne
+Declare Numeric quarterTwo
+Declare Numeric quarterThree
+Declare Numeric quarterFour
+Declare Numeric totalSales
+Declare Numeric avgSales
+
+
+//Get input
+Display "Enter sale figure for Quarter One"
+Input quarterOne
+Display "Enter sale figure for Quarter Two"
+Input quarterTwo
+Display "Enter sale figure for Quarter Three"
+Input quarterThree
+Display "Enter sale figure for Quarter Four"
+Input quarterFour
+
+//Total Sales
+totalSales = quarterOne + quarterTwo + quarterThree + quarterFour // this adds all the quarters together for the variable totalSales
+
+//Average quarterly sales
+avgSales = totalSales / 4 // This calculates the average quarterly sales. It divides the total sales by 4 (number of quarters in a year)
+
+// Display
+Display "Total Sales: $" + totalSales // this shows the total sales.
+Display "The Average Quarterly Sales: $" + avgSales // this will show the average quarterly sales. 

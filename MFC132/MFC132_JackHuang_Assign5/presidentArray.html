@@ -1,0 +1,28 @@
+<html>
+<head>
+<h1> Last names of Presidents </h1>
+<script type="text/javascript">
+
+var names = 5;
+var presidentNames;
+var index;
+
+//loop
+
+presidentNames = new Array(names);
+
+for (index = 0; index < names; index++) {
+presidentNames[index] = prompt("Enter a last name of a previous President of the United States.");
+};
+presidentNames.sort();
+//Displaying the president names
+document.write("The 5 last names of previous Presidents of the United States entered are:" + "<br />");
+for (index = 0; index < names; index++) {
+document.write(presidentNames[index] + "<br />");
+};
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<h1> Upper Crust College Admissions</h1>
+<script type="text/javascript">
+
+//Variables
+var satScore = prompt("Enter your SAT score");
+satScore = parseInt(satScore); // the parseInt for SAT Score
+var parentA = prompt("Does one of your parents have alumnus status?", "Y/N");
+parentA = parentA.toUpperCase(parentA);
+var familyIncome = prompt("Enter your family income");
+familyIncome = parseInt(familyIncome); //parseInt for familyIncome
+var studentAdmitted = "N";
+//function
+if (satScore >= 1400) {
+	studentAdmitted = "Y";
+	document.write("You have an SAT score of 1400+, you are ACCEPTED!");
+}
+else if (satScore >= 1200 && parentA == "Y") {
+	studentAdmitted = "Y";
+	document.write("You have an SAT score of 1200+ and one of your parent has alumnus status, you are ACCEPTED!");
+}
+else if (satScore >= 1200 && familyIncome >= 100000) {
+	studentAdmitted = "Y";
+	document.write("You have an SAT score of 1200+ and family income of $100,000+, you are ACCEPTED!");
+}
+else { 
+	studentAdmitted = "N";
+	document.write("Sorry, you have NOT been accepted to Upper Crust College Admissions." + "<p />" + "Thank you for applying.")
+};
+if (studentAdmitted == "Y") {
+	if (familyIncome < 100000) {
+	document.write("<p />" + "You have been granted a scholarship based on your acceptance and family income.");
+}
+else {
+ 	document.write("<p />" + "You have not been granted a scholarship with your acceptance.");
+	}
+};
+
+</script>
+</head>
+<body>
+</body>
+</html>

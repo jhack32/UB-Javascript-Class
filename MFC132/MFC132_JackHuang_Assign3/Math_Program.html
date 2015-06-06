@@ -1,0 +1,38 @@
+<html>
+<head>
+<body>
+<script type="text/javascript">
+
+//declaring variables
+var num1
+var num2 
+var method 
+var more
+var BR = "<br>"
+
+//if and else/else ifs 
+	do {
+	num1 = prompt("Enter a number");
+	num1 = parseInt(num1)
+	num2 = prompt("Enter a second number");
+	num2 = parseInt(num2)
+	method = prompt("Enter either 1,2,3 or 4,", "1=Add, 2=Subtract, 3=Multiply, 4=Divide")
+	if (method == 1) {
+	document.write(num1 + " + " + num2 + " = " + (num1 + num2), BR)
+}
+else if (method == 2) {
+	document.write(num1 + " - " + num2 + " = " + (num1 - num2), BR)
+}
+else if (method == 3) {
+	document.write(num1 + " * " + num2 + " = " + (num1 * num2), BR)
+}
+else if (method == 4) {
+	document.write(num1 + " / " + num2 + " = " + (num1 / num2), BR)
+}
+else {
+	document.write("Error, you did not input a value from the range 1-4", BR)
+}
+	more = prompt("Do you wish to perform another set of arithmetic?", "Y for yes and N for no");
+} while (more == "Y" || more == "y");
+
+</script> </body> </head> </html>
